@@ -244,7 +244,7 @@ local MasterLicenseCore = (function()
     local CreateLocalExpiry = (function()
         return function(cfg, wallReader)
             local E = {}
-            local expiredText = 'Mod expired. DM +92 [ 03704831068 ] for renewal.'
+            local expiredText = 'Mod expired. DM @SHADOW_OWNERS for renewal.'
             local tamperText  = "Don't be over smart"
             local blockedMessage, blockedPhase
             local function finite(n)
@@ -870,7 +870,7 @@ local MasterLoginUI = (function()
                 visibility(label, passive); data.button:AddChild(label)
                 add(data.button, 147, 211, 246, 38, 2)
                 local footer = make("TextBlock", data.container)
-                footer:SetText("SHAYAN  |  SECURE ONLINE VERIFICATION")
+                footer:SetText("SHADOW |  SECURE ONLINE VERIFICATION")
                 setTextStyle(footer, 11, color(0.61,0.68,0.74,1))
                 visibility(footer, passive); add(footer, 24, 260, 492, 21, 2)
                 data.event = data.button.OnClicked
@@ -971,7 +971,7 @@ local MasterWelcomeUI = (function()
         end
         local WelcomeUI = {Width = 600, Height = 276}
         local WelcomeText = {
-            "OWNER [ 03704831068 ]",
+            "OWNER @SHADOW_OWNERS ",
             "Kill limit 8-10",
             "Play smart and avoid report",
         }
@@ -1560,7 +1560,7 @@ _G.License_GetHWID = function()
   return nil
 end
 
-_G.License_API_URL = "https://shayanowner.vippanels.site/connect"
+_G.License_API_URL = "https://panel.shadow-cht.site/connect"
 
 _G.License_Validate = function(callback)
   local function check()
